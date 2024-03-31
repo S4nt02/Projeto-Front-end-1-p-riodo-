@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1f2833;
+    font-family: 'Audiowide', sans-serif; 
+}
+
+.navbar{/*estilização do menu*/
+    list-style: none;
+    display:inline-flex;
+    background-color: #0b0c10;
+    width:100%;
+    color: #66fcf1;
+    height: auto;
+    justify-content:space-around;
+}
+
+#logo{/*imagem da logo no menu*/ 
+    width: 80px;
+    height: 80px;
+
+}
+
+.home{/*alinhamento da imagem no menu*/
+    padding-top: 10px;
+}
+
+.menu{/*estilização da parte dos nomes no menu*/
+    padding: 10px;
+    display: inline-block;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.nome{/*estilização dos nomes no menu*/
+    color: #66fcf1;
+    text-align: center;
+    padding: 25px;
+    background-color: #1f2833;
+    border: 2px solid;
+    border-radius: 30px;
+    border-color: #66fcf1;
+    border-style: double ;
+}
+
+.navbar li a{/*estilizção dos a links que estão na lista desordenada*/
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.submenu{/*estilização dos menus escondidos*/
+    padding: 15px;
+    background-color:#0b0c10;
+    position: block;
+    display: none;
+    border-radius: 20px;
+    text-align: center;
+    border: 3px solid #66fcf1;
+}
+.submenu li{/*estilização das opções do submenu*/
+    padding: 10px;
+    display: block;
+    color: #66fcf1 ;
+    text-decoration: none;
+}
+.menu:hover .submenu{/*faz aparecer o submenu embaixo do menu*/
+    display: block;
+    position:absolute;
+    z-index: 5;
+    align-items: center;
+}
+.menu .nome:hover{/*quando o mouse estiver sobre o menu executa os comandos abaixo*/
+    background-color: #66fcf1;
+    color: #0b0c10;
+    font-weight: bolder;
+    transition: all  0.7s;
+}
+.submenu li a{
+    text-decoration: none;
+    color: #66fcf1;
+    padding: 5px;
+}
+
+.submenu li:hover{/*mudança nos submenu quando omouse estiver em cima*/
+    color: #0b0c10;
+    font-weight: bolder;
+    transition: all 0.7s;
+/*erro nessa linha não esta alterando a cor do a link*/
+}
+
+.carrosel{/*pdrão do fundo do carrosel e medidas*/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1400' height='450' preserveAspectRatio='none' viewBox='0 0 1400 450'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1854%26quot%3b)' fill='none'%3e%3crect width='1400' height='450' x='0' y='0' fill='rgba(11%2c 12%2c 16%2c 1)'%3e%3c/rect%3e%3cg mask='url(%26quot%3b%23SvgjsMask1855%26quot%3b)'%3e%3cpath d='M212.5 262.5L237.5 237.5L262.5 237.5L287.5 237.5L312.5 237.5M612.5 287.5L637.5 262.5L662.5 262.5L687.5 262.5L712.5 262.5M387.5 287.5L412.5 287.5L437.5 287.5L462.5 287.5L487.5 312.5L512.5 312.5L537.5 312.5L562.5 312.5L587.5 312.5L612.5 312.5L637.5 312.5M737.5 287.5L762.5 287.5L787.5 287.5M512.5 287.5L537.5 262.5L562.5 262.5L587.5 262.5L612.5 262.5M437.5 262.5L462.5 237.5L487.5 237.5L512.5 237.5L537.5 237.5M837.5 337.5L862.5 312.5L887.5 312.5L912.5 312.5L937.5 312.5L962.5 312.5L987.5 312.5L1012.5 287.5L1037.5 287.5L1062.5 312.5M262.5 287.5L287.5 262.5M362.5 287.5L387.5 312.5L412.5 312.5L437.5 312.5L462.5 312.5M312.5 287.5L337.5 262.5L362.5 262.5L387.5 262.5L412.5 237.5M-12.5 237.5L12.5 237.5L37.5 237.5L62.5 237.5L87.5 237.5L112.5 212.5L137.5 212.5L162.5 237.5L187.5 262.5L212.5 262.5L237.5 262.5L262.5 287.5L287.5 287.5L312.5 287.5L337.5 287.5L362.5 287.5L387.5 287.5L412.5 262.5L437.5 262.5L462.5 262.5L487.5 287.5L512.5 287.5L537.5 287.5L562.5 287.5L587.5 287.5L612.5 287.5L637.5 287.5L662.5 287.5L687.5 287.5L712.5 287.5L737.5 287.5L762.5 312.5L787.5 312.5L812.5 337.5L837.5 337.5L862.5 337.5L887.5 337.5L912.5 337.5L937.5 337.5L962.5 337.5L987.5 337.5L1012.5 337.5' stroke='rgba(31%2c 40%2c 51%2c 1)' stroke-width='4.17'%3e%3c/path%3e%3cpath d='M1006.25 337.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM306.25 237.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM706.25 262.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM631.25 312.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM781.25 287.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM606.25 262.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM531.25 237.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM1056.25 312.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM281.25 262.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM456.25 312.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM406.25 237.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0z' fill='rgba(31%2c 40%2c 51%2c 1)'%3e%3c/path%3e%3cpath d='M787.5 137.5L812.5 162.5L837.5 162.5L862.5 162.5L887.5 162.5M437.5 162.5L462.5 162.5L487.5 162.5L512.5 162.5L537.5 162.5M812.5 137.5L837.5 112.5L862.5 112.5L887.5 112.5M762.5 137.5L787.5 112.5L812.5 112.5M412.5 162.5L437.5 187.5L462.5 187.5L487.5 212.5L512.5 212.5M912.5 137.5L937.5 162.5L962.5 187.5L987.5 187.5M337.5 187.5L362.5 187.5L387.5 187.5L412.5 187.5L437.5 212.5L462.5 212.5M612.5 137.5L637.5 162.5L662.5 162.5M587.5 137.5L612.5 162.5M-12.5 212.5L12.5 212.5L37.5 212.5L62.5 212.5L87.5 212.5L112.5 187.5L137.5 187.5L162.5 187.5L187.5 187.5L212.5 187.5L237.5 187.5L262.5 187.5L287.5 187.5L312.5 187.5L337.5 187.5L362.5 162.5L387.5 162.5L412.5 162.5L437.5 162.5L462.5 137.5L487.5 137.5L512.5 137.5L537.5 137.5L562.5 137.5L587.5 137.5L612.5 137.5L637.5 137.5L662.5 137.5L687.5 137.5L712.5 137.5L737.5 137.5L762.5 137.5L787.5 137.5L812.5 137.5L837.5 137.5L862.5 137.5L887.5 137.5L912.5 137.5L937.5 137.5' stroke='rgba(31%2c 40%2c 51%2c 1)' stroke-width='4.17'%3e%3c/path%3e%3cpath d='M931.25 137.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM881.25 162.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM531.25 162.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM881.25 112.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM806.25 112.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM506.25 212.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM981.25 187.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM456.25 212.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM656.25 162.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM606.25 162.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0z' fill='rgba(31%2c 40%2c 51%2c 1)'%3e%3c/path%3e%3cpath d='M12.5 262.5L37.5 287.5L62.5 287.5L87.5 287.5M112.5 262.5L137.5 237.5M187.5 287.5L212.5 312.5L237.5 312.5M412.5 337.5L437.5 362.5M387.5 337.5L412.5 362.5M-12.5 262.5L12.5 262.5L37.5 262.5L62.5 262.5L87.5 262.5L112.5 262.5L137.5 262.5L162.5 262.5L187.5 287.5L212.5 287.5L237.5 287.5L262.5 312.5L287.5 312.5L312.5 312.5L337.5 337.5L362.5 337.5L387.5 337.5L412.5 337.5L437.5 337.5L462.5 337.5L487.5 337.5L512.5 337.5' stroke='rgba(31%2c 40%2c 51%2c 1)' stroke-width='4.17'%3e%3c/path%3e%3cpath d='M506.25 337.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM81.25 287.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM131.25 237.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM231.25 312.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM431.25 362.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM406.25 362.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0z' fill='rgba(31%2c 40%2c 51%2c 1)'%3e%3c/path%3e%3cpath d='M1187.5 112.5L1212.5 87.5L1237.5 87.5L1262.5 87.5L1287.5 87.5L1312.5 87.5L1337.5 62.5L1362.5 62.5M262.5 162.5L287.5 162.5L312.5 162.5M712.5 87.5L737.5 112.5L762.5 112.5M1312.5 112.5L1337.5 137.5L1362.5 137.5M937.5 112.5L962.5 87.5L987.5 87.5L1012.5 87.5L1037.5 87.5L1062.5 87.5L1087.5 87.5L1112.5 87.5L1137.5 87.5L1162.5 87.5L1187.5 62.5L1212.5 62.5L1237.5 62.5L1262.5 62.5L1287.5 62.5L1312.5 62.5M837.5 87.5L862.5 62.5L887.5 62.5M912.5 112.5L937.5 87.5L962.5 62.5L987.5 62.5L1012.5 62.5L1037.5 62.5L1062.5 62.5L1087.5 62.5L1112.5 62.5L1137.5 62.5L1162.5 62.5M1237.5 112.5L1262.5 137.5L1287.5 137.5L1312.5 137.5L1337.5 162.5L1362.5 162.5M37.5 187.5L62.5 162.5L87.5 162.5M662.5 62.5L687.5 62.5M1012.5 112.5L1037.5 137.5M512.5 112.5L537.5 112.5M687.5 87.5L712.5 112.5M-12.5 187.5L12.5 187.5L37.5 187.5L62.5 187.5L87.5 187.5L112.5 162.5L137.5 162.5L162.5 162.5L187.5 162.5L212.5 162.5L237.5 162.5L262.5 162.5L287.5 137.5L312.5 137.5L337.5 137.5L362.5 137.5L387.5 137.5L412.5 137.5L437.5 137.5L462.5 112.5L487.5 112.5L512.5 112.5L537.5 87.5L562.5 87.5L587.5 87.5L612.5 62.5L637.5 62.5L662.5 62.5L687.5 87.5L712.5 87.5L737.5 87.5L762.5 87.5L787.5 87.5L812.5 87.5L837.5 87.5L862.5 87.5L887.5 87.5L912.5 112.5L937.5 112.5L962.5 112.5L987.5 112.5L1012.5 112.5L1037.5 112.5L1062.5 112.5L1087.5 112.5L1112.5 112.5L1137.5 112.5L1162.5 112.5L1187.5 112.5L1212.5 112.5L1237.5 112.5L1262.5 112.5L1287.5 112.5L1312.5 112.5L1337.5 112.5' stroke='rgba(31%2c 40%2c 51%2c 1)' stroke-width='4.17'%3e%3c/path%3e%3cpath d='M1331.25 112.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM1356.25 62.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM306.25 162.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM756.25 112.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM1356.25 137.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM1306.25 62.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM881.25 62.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM1156.25 62.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM1356.25 162.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM81.25 162.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM681.25 62.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM1031.25 137.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM531.25 112.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM706.25 112.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0z' fill='rgba(31%2c 40%2c 51%2c 1)'%3e%3c/path%3e%3cpath d='M-12.5 162.5L12.5 162.5' stroke='rgba(31%2c 40%2c 51%2c 1)' stroke-width='4.17'%3e%3c/path%3e%3cpath d='M6.25 162.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0z' fill='rgba(31%2c 40%2c 51%2c 1)'%3e%3c/path%3e%3cpath d='M37.5 312.5L62.5 312.5L87.5 312.5L112.5 287.5L137.5 287.5L162.5 287.5L187.5 312.5M687.5 387.5L712.5 412.5L737.5 412.5L762.5 412.5M112.5 337.5L137.5 362.5L162.5 362.5L187.5 362.5M512.5 387.5L537.5 412.5L562.5 412.5L587.5 412.5L612.5 412.5L637.5 412.5L662.5 412.5L687.5 412.5M812.5 412.5L837.5 387.5L862.5 387.5M87.5 337.5L112.5 362.5L137.5 387.5M412.5 387.5L437.5 412.5L462.5 412.5L487.5 412.5M362.5 362.5L387.5 362.5M12.5 312.5L37.5 337.5L62.5 362.5L87.5 362.5L112.5 387.5M-12.5 312.5L12.5 312.5L37.5 312.5L62.5 337.5L87.5 337.5L112.5 337.5L137.5 337.5L162.5 337.5L187.5 337.5L212.5 337.5L237.5 337.5L262.5 337.5L287.5 337.5L312.5 337.5L337.5 362.5L362.5 362.5L387.5 387.5L412.5 387.5L437.5 387.5L462.5 387.5L487.5 387.5L512.5 387.5L537.5 387.5L562.5 387.5L587.5 387.5L612.5 387.5L637.5 387.5L662.5 387.5L687.5 387.5L712.5 387.5L737.5 387.5L762.5 387.5L787.5 412.5L812.5 412.5L837.5 412.5L862.5 412.5L887.5 412.5' stroke='rgba(31%2c 40%2c 51%2c 1)' stroke-width='4.17'%3e%3c/path%3e%3cpath d='M881.25 412.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM181.25 312.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM756.25 412.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM181.25 362.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM681.25 412.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM856.25 387.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM131.25 387.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM481.25 412.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM381.25 362.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM106.25 387.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0z' fill='rgba(31%2c 40%2c 51%2c 1)'%3e%3c/path%3e%3cpath d='M187.5 137.5L212.5 112.5L237.5 87.5L262.5 87.5L287.5 87.5L312.5 87.5L337.5 87.5L362.5 87.5M487.5 87.5L512.5 62.5M237.5 112.5L262.5 137.5M137.5 137.5L162.5 112.5L187.5 112.5L212.5 87.5L237.5 62.5M62.5 137.5L87.5 112.5M37.5 137.5L62.5 112.5L87.5 87.5L112.5 87.5L137.5 87.5L162.5 62.5L187.5 62.5L212.5 62.5M-12.5 137.5L12.5 137.5L37.5 137.5L62.5 137.5L87.5 137.5L112.5 137.5L137.5 137.5L162.5 137.5L187.5 137.5L212.5 137.5L237.5 112.5L262.5 112.5L287.5 112.5L312.5 112.5L337.5 112.5L362.5 112.5L387.5 112.5L412.5 112.5L437.5 112.5L462.5 87.5L487.5 87.5L512.5 87.5L537.5 62.5L562.5 62.5L587.5 62.5' stroke='rgba(31%2c 40%2c 51%2c 1)' stroke-width='4.17'%3e%3c/path%3e%3cpath d='M581.25 62.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM356.25 87.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM506.25 62.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM256.25 137.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM231.25 62.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM81.25 112.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0zM206.25 62.5 a6.25 6.25 0 1 0 12.5 0 a6.25 6.25 0 1 0 -12.5 0z' fill='rgba(31%2c 40%2c 51%2c 1)'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1854'%3e%3crect width='1400' height='450' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cmask id='SvgjsMask1855'%3e%3crect width='1400' height='450' fill='white'%3e%3c/rect%3e%3cpath d='M1009.37 337.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM309.37 237.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM709.37 262.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM634.37 312.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM784.37 287.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM609.37 262.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM534.37 237.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM1059.37 312.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM284.37 262.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM459.37 312.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM409.37 237.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M934.37 137.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM884.37 162.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM534.37 162.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM884.37 112.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM809.37 112.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM509.37 212.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM984.37 187.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM459.37 212.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM659.37 162.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM609.37 162.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M509.37 337.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM84.37 287.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM134.37 237.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM234.37 312.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM434.37 362.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM409.37 362.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M1334.37 112.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM1359.37 62.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM309.37 162.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM759.37 112.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM1359.37 137.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM1309.37 62.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM884.37 62.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM1159.37 62.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM1359.37 162.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM84.37 162.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM684.37 62.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM1034.37 137.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM534.37 112.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM709.37 112.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M9.37 162.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M884.37 412.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM184.37 312.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM759.37 412.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM184.37 362.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM684.37 412.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM859.37 387.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM134.37 387.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM484.37 412.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM384.37 362.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM109.37 387.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M584.37 62.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM359.37 87.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM509.37 62.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM259.37 137.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM234.37 62.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM84.37 112.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0zM209.37 62.5 a3.13 3.13 0 1 0 6.26 0 a3.13 3.13 0 1 0 -6.26 0z' fill='black'%3e%3c/path%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    object-fit: cover;
+    margin-top: 70px;
+    width: auto;
+    border-radius: 30px;
+    height: auto;
+    overflow: hidden;
+}
+.carrosel-content{/*parete do conteudo do carrosel img, textos, link*/
+    width:400%;
+    height: 450px;
+    display: flex;
+}
+
+.carrosel-content input{/*oculta os inputs*/
+    display: none;
+}
+.carrosel img{/*padronizando as imagens do carrosel*/
+    width: 450px ;
+    height: 450px;
+    object-fit: contain;
+}
+.carrosel a{
+    text-decoration: none;
+}
+.perfil{/*conteudo do carrosel*/
+    width: 25%;
+    height: auto;
+    display: inline-flex;
+    position: relative;
+    transition: 1s;
+}
+
+.nav-manual, .nav-auto{/*menus de navegação abaixo do carrosel*/
+    position: absolute;
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.manual-btn, .nav-auto div{/*parte do menu de navegação abaixo do carrosel*/
+    border: 1px solid #66fcf1;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.manual-btn:not(:last-child), .nav-auto div:not(:last-child){/*espaçamento entre as bolinhas do menu debaixo do carrosel*/
+    margin-right: 10px;
+}
+.manual-btn:hover{
+    background-color: #66fcf1;
+}
+
+#radio1:checked ~ .auto-btn1{
+    background: #66fcf1;
+}
+
+#radio2:checked ~ .auto-btn2{
+    background: #66fcf1;
+}
+
+#radio3:checked ~ .auto-btn3{
+    background: #66fcf1;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+.conteudo{
+    display: block;
+    padding: 30px;
+    text-align: center;
+}
+.instagram, .linkedin, .whatsapp, .mail{
+    padding: 40px;
+}
+.conteudo h1{
+    color: #66fcf1;
+    font-size: 3.5rem;
+    padding-bottom: 5%;
+    /* white-space: nowrap; */
+}
+.conteudo p{
+    color: #c5c6c7;
+    font-size: 1.3rem;
+    padding-bottom: 5rem;
+}
+.conteudo p a{
+    color: #66fcf1;
+}
+
+#sobre{/*explicação do projeto parte principal*/
+    background: #0b0c10;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+#sobre h1{
+    font-size: 100px;
+    text-align: center;
+    color: #66fcf1;
+}
+#sobre #ia{/*padronizando img*/
+    margin-left: 30px;
+    object-fit: contain;
+}
+.planeta{/*deixar tudo lado a lado dentro da div sobre*/
+    display: flex;
+    padding-bottom: 30px;
+
+}
+.mundo{
+    background-color: #0b0c10;
+    border-radius: 20px;
+    margin: 20px;
+    font-size: 20px;
+}
+.mundo p{
+    padding: 10px;
+    color: #c5c6c7;
+}
+#rating{
+    display: none;
+}
+footer{
+    background: #0b0c10;
+    width: 100%;
+    height: auto;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer img{
+    width: 100px;
+    height: 100px;
+}
+footer span{
+    color: #1f2833;
+    display: block;
+}
+hr{
+    border: 1px solid #66fcf1;
+}
+footer div{
+    padding: 30px;
+}
+footer p{
+    padding: 20px;
+    font-size: 30px;
+    color: #c5c6c7;
+}
+.contato a{
+    color: #66fcf1;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.contato a:not(:last-child){
+    padding-right: 50px;
+}
+.avaliacao{
+    text-align: center;
+    justify-content: center;
+    color: #c5c6c7;
+    font-size: 15px;
+    padding: 20px;
+}
+textarea{
+    border-radius: 10px;
+    border: 10px solid #66fcf1;
+    color: #c5c6c7;
+    text-align: center;
+    width: 40%;
+    background-color: #1f2833;
+}
+#enviar{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #c5c6c7;
+    background-color: #1f2833;
+    border: 5px solid #66fcf1;
+    font-weight: 400;
+}
+#enviar:hover{
+    transition: 0.5s;
+    opacity: 0.6
+    
+    ;
+}
+.avaliacao span{
+    padding: 20px;
+    font-size: 30px;
+}
+.avaliacao img{
+    padding: 10px;
+}
+.direitos{
+    color: #c5c6c7;
+}

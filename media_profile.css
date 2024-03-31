@@ -1,0 +1,312 @@
+
+@media screen and (max-width:1030px){
+    .nome{
+        padding: 20px;
+    }
+}
+@media screen and (max-width:950px){
+    .perfil img{
+        width: 250px;
+    }
+    .perfil h1{
+        font-size: 40px;
+    }
+    #historia h1{
+        font-size: 40px;
+    }
+@media screen and (max-width:874px){
+    .nome{
+        padding: 15px;
+    }
+    .submenu{/*estilização dos menus escondidos*/
+        padding: 15px;
+    }
+    #contato a{
+        padding: 18px;
+    }
+    svg{
+        width: 50px;
+        height: 50px;
+    }
+    #historia{
+        padding: 15px;
+    }
+    .descricao, .content{
+        width: 500px;
+    }
+}
+}
+@media screen and (max-width:805px) {
+    .descricao, .content{
+        width: 450px;
+    }
+}
+@media screen and (max-width:750px){
+    main{
+        display: inline-block;
+    }
+    .perfil{
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0;
+    }
+    .perfil img{
+        width: 400px;
+    }
+    #historia{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 30px;
+    }
+    #historia-conteudo{
+        height: 300px;
+        overflow: scroll;
+    }
+    #historia h1{ 
+        text-align: center;
+    }
+    footer p{
+        font-size: 25px;
+    }
+    footer div{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .contato a:not(:last-child){
+        padding-right: 30px;
+        
+    } 
+    .descricao, .content{
+        width: 410px;
+    }
+}
+@media  screen and (max-width:685px) {
+    .descricao, .content{
+        width: 390px;
+    }
+    .modal-header{
+        font-size: 13px;
+    }
+    #modal7 img{
+        width: 160px;
+    }
+    #projeto7{
+        width: 180px;
+        height: 200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #projeto9{
+        width: 180px;
+    }
+    #projeto10{
+        width: 180px;
+    }
+    #projeto2-bira{
+        width: 170px;
+    }
+    #projeto3-bira{
+        width: 170px;
+    }
+
+}
+@media screen and (max-width:650px){
+    .menu{
+        font-size: 1rem;
+    }
+    .contato a:not(:last-child){
+        padding-right: 10px;
+        
+    } 
+    footer p{
+        font-size: 20px;
+    }
+    footer div{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .contato a{
+        font-size: 15px;
+    }
+    #modal, #modal1, #modal2, #modal3, #modal4, #modal5, #modal6, #modal7, #modal8, #modal9{
+        height: 600px;
+    }
+    .modal-body{
+        display: block;
+    }
+    .modal-body img{
+        width: 150px;
+        height: 150px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .descricao{
+        height: 50px;
+        width: 550px;
+    }
+    .content{
+        width: 550px;
+        height: 250px;
+        overflow: scroll;
+    }
+    .certificado-content img{
+        width: 480px;
+        height: 300px;
+    }
+    .modal-header{
+        font-size: 15px;
+    }
+    .modal-rigth{
+        display: block;
+    }
+    .modal-rigth button{
+        margin-left: 30px;
+    }
+    #projeto7{
+        width: 300px;
+        height: 150px;
+    }
+    #funciona {
+        height: 200px;
+    }
+    #projeto10{
+        height: 180px;
+    }
+    #projeto4-bira{
+        height: 150px;
+    }
+}
+@media screen and (max-width:550px){
+    #logo{
+        width: 50px;
+        height: 50px;
+    }
+    .menu{
+        font-size: 0.8rem;
+    }
+    .nome{
+        padding: 10px;
+        border: 1px solid;
+    }
+    .contato a:not(:last-child){
+        padding-right: 5px;
+    } 
+    .contato a{
+        font-size: 12px;
+    }
+    #certificado h1{
+        font-size: 40px;
+    }
+    .certificados{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .certificado-content img{
+        width: 400px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:498px){
+    .navbar{
+        display: block;
+        text-align: center;
+    }
+    .menu{
+        display: block;
+    }
+    .submenu{
+        position: flex;
+        padding: 15px;
+    }
+    .submenu li{
+        padding: 5px;
+    }
+    .menu:hover .submenu{/*faz aparecer o submenu embaixo do menu*/
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+    }
+    .perfil img{
+        width: 200px;
+        height: 300px;
+    }
+    footer p{
+        font-size: 25px
+    }
+    footer .contato a{
+        display: block;
+        font-size: 20px;
+        padding: 20px;
+    }
+    #contato a{
+        padding: 10px;
+    }
+    svg{
+        width: 40px;
+        height: 40px;
+    }
+    #titulo{
+        font-size: 40px;
+    }
+    .content{
+        height: 230px;
+    }
+    .descricao{
+        overflow: scroll;
+    }
+    .certificado-content img{
+        width: 300px;
+        height: 200px;
+    }
+    .modal-header{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:405px){
+
+    .submenu{/*estilização dos menus escondidos*/
+        padding: 5px;
+    }
+    .nome{
+        padding: 5px;
+        border: 1px solid;
+    }
+    .menu{
+        font-size: 0.6rem;
+        padding: 5px;
+    }
+    #logo{
+        width: 40px;
+        height:40px;
+    }
+    #titulo{
+        font-size: 40px;
+    }
+    #portifolio{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    }
+    #contato a{
+        padding: 5px;
+    }
+    #historia{
+        padding: 15px;
+    }
+    #certificado h1{
+        font-size: 30px;
+    }
+    main{
+        padding: 10px;
+    }
+    .certificado-content img{
+        width: 300px;
+        height: 200px;
+    }
+    .content{
+        height: 200px;
+    }
+    .certificado-content img{
+        width: 200px;
+        height: 150px;
+    }
+    #projeto7{
+        width: 280px;
+    }
+}

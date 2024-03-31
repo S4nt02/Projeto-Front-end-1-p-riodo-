@@ -1,0 +1,333 @@
+@media screen and (max-width:1200px){
+    .instagram, .linkedin, .whatsapp, .mail{
+        padding: 3rem;
+    }
+    .carrosel img{/*padronizando as imagens do carrosel*/
+        width: 400px ;
+    }
+}
+@media screen and (max-width:1145px) {
+    .conteudo h1{
+        font-size: 3.2rem;
+    }
+    
+}
+@media screen and (max-width:1090px) {
+    .conteudo{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .conteudo p{
+        padding-bottom: 4.5rem;
+    }
+    .instagram, .linkedin, .whatsapp, .mail{
+        padding-top: 3rem;
+    } 
+}
+@media screen and (max-width:1030px){
+    .conteudo h1{
+        font-size: 3rem;
+    }
+    .nome{
+        padding: 20px;
+    }
+    #sobre h1{
+        font-size: 90px;
+    }
+    #sobre #ia{
+        width: 450px;
+    }
+    .instagram, .linkedin, .whatsapp, .mail{
+        padding-top: 3rem;
+        padding-left: 30px;
+        padding-right: 30px;
+    } 
+}
+@media (pointer: coarse){
+}
+
+
+@media screen and (max-width:922px){
+    .instagram, .linkedin, .whatsapp, .mail{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .conteudo p{
+        padding-bottom: 50px;
+    }
+    svg{
+        width: 55px;
+        height: 55px;
+    }
+}
+@media screen and (max-width:902px){
+    .carrosel img{
+        width: 300px;
+    }
+}
+@media screen and (max-width:872px){
+    .conteudo p{
+        padding-bottom: 3.5rem;
+    }
+    .instagram, .linkedin, .whatsapp, .mail{
+        padding-top: 2.5rem;
+    } 
+    .nome{
+        padding: 15px;
+    }
+    .submenu{/*estilização dos menus escondidos*/
+        padding: 15px;
+    }
+}
+@media screen and (max-width:850px){
+    .conteudo{
+        padding-top: 10px;
+    }
+    .conteudo p{
+        font-size: 1.1rem;
+    }
+    .carrosel{
+        height: 450px;
+    }
+    #sobre h1{
+        font-size: 80px;
+    }
+    .planeta{
+        display: block;
+        text-align: center;
+    }
+    .mundo p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    #sobre img{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:800px){
+    .conteudo h1{
+        font-size: 2.5rem;
+    }
+    .instagram, .linkedin, .whatsapp, .mail{
+        padding: 15px;
+    }
+    footer p{
+        font-size: 25px;
+    }
+    footer div{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .contato a:not(:last-child){
+        padding-right: 30px;
+        
+    } 
+}
+@media screen and (max-width:680px){
+    .instagram, .linkedin, .whatsapp, .mail{
+        padding: 10px;
+    }
+    
+}
+@media screen and (max-width:650px){
+    .carrosel img{
+        width: 250px;
+        height: 350px;
+    }
+    .carrosel{
+        height: 350px;
+    }
+    .carrosel h1{
+        font-size: 2rem;
+    }
+    .instagram, .linkedin, .whatsapp, .mail{
+        padding-top: 5px;
+    }
+    svg{
+        width: 45px;
+        height: 45px;
+    }
+    .conteudo p{
+        font-size: 1rem;
+        padding-bottom: 2.5rem;
+    }
+    .nav-manual, .nav-auto{
+        margin-top: -13%;
+    }
+    .menu{
+        font-size: 1rem;
+    }
+    .contato a:not(:last-child){
+        padding-right: 10px;
+        
+    } 
+    footer p{
+        font-size: 20px;
+    }
+    footer div{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .contato a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:550px){
+    .carrosel img{
+        width: 200px;
+        object-fit: fill;
+    }
+    #logo{
+        width: 50px;
+        height: 50px;
+    }
+    .menu{
+        font-size: 0.8rem;
+    }
+    .nome{
+        padding: 10px;
+        border: 1px solid;
+    }
+    .contato a:not(:last-child){
+        padding-right: 5px;
+    } 
+    .contato a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:498px){
+    .carrosel{
+        display: block;
+    }
+    .carrosel img{
+        width: 150px;
+        height: 300px;
+    }
+    .carrosel{
+        height: 300px;
+    }
+    .conteudo h1{
+        font-size: 1.5rem;
+    }
+    svg{
+        width: 35px;
+        height: 35px;
+    }
+    .conteudo p{
+        font-size: 0.8rem;
+    }
+    .nav-manual, .nav-auto{
+        margin-top: -25%;
+    }
+    .navbar{
+        display: block;
+        text-align: center;
+    }
+    .menu{
+        display: block;
+    }
+    .submenu{
+        position: flex;
+    }
+    .menu:hover .submenu{/*faz aparecer o submenu embaixo do menu*/
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+    }
+    #sobre #ia{
+        width: 350px;
+    }
+    footer p{
+        font-size: 25px
+    }
+    .mundo p{
+        font-size: 10px;
+    }
+    .contato a{
+        display: block;
+        padding: 15px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .instagram, .linkedin, .whatsapp, .mail{
+        padding-top: 5px;
+        padding-right: 10px;
+    }
+    textarea{
+        width: 90%;
+    }
+    .avaliaçao{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-width:405px){
+    .carrosel img{
+        width: 100px;
+        height: 250px;
+    }
+    .carrosel{
+        height: 250px;
+    }
+    .carrosel h1{
+        font-size: 1.2rem;
+    }
+    .nav-manual, .nav-auto{
+        margin-top: -45%;
+    }
+    .submenu{/*estilização dos menus escondidos*/
+        padding: 5px;
+    }
+    .nome{
+        padding: 5px;
+        border: 1px solid;
+    }
+    .menu{
+        font-size: 0.6rem;
+        padding: 5px;
+    }
+    #logo{
+        width: 40px;
+        height:40px;
+    }
+    #sobre h1{
+        font-size: 60px;
+    }
+    .avaliar img{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+@media screen and (max-width:380px){
+    .carrosel p{
+        font-size: 0.6rem;
+    }
+    svg{
+        width: 30px;
+        height: 30px;
+    }
+    .instagram, .linkedin, .whatsapp, .mail{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nav-manual, .nav-auto{
+        margin-top: -55%;
+    }
+    #sobre #ia{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:350px) {
+    #sobre #ia{
+        width: 300px;
+    }   
+}
+@media screen and (max-width:300px) {
+    #sobre #ia{
+        width: 250px;
+    }   
+    #sobre h1{
+        font-size: 40px;
+    }
+}
